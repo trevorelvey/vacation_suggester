@@ -1,5 +1,5 @@
 body {
-  background-color: grey;
+  background-color: black;
   background: url('../images/background.jpg');
   background-size: 1440px 800px;
   background-repeat: no-repeat;
@@ -11,8 +11,7 @@ body {
 }
 
 .navbar {
-  background-color: #59585d;
-  color: white;
+   background: rgba(10, 15, 20, 0.6);
 }
 
 .navbar .navbar-brand {
@@ -20,7 +19,7 @@ body {
 }
 
 .well {
-  background-color: #59585d;
+  background: rgba(10, 15, 20, 0.6);
   border: 0px;
 }
 

@@ -1,6 +1,8 @@
 $(document).ready(function() {
   $("form#vacation").submit(function(event) {
     $("img").hide();
+
+// Variables
     var tempVariable = $("select#temp").val();
     var cityVariable = $("select#city").val();
     var forestVariable = $("select#forest").val();
