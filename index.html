@@ -2,9 +2,89 @@
   <html>
 
     <head>
-
+      <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+      <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
+      <script src="js/jquery-1.12.0.js"></script>
+      <script src="js/scripts.js"></script>
       <title>Choose Your Vacation!</title>
     </head>
 
     <body>
-      
+
+      <div class="container">
+
+        <!-- Form -->
+        <form id="vacation">
+
+          <!-- Question 1 -->
+          <label for="temperature">Do you prefer a warm vacation or do you like it a bit chilly??</label>
+          <select class="input" id="temp">
+            <option id="select" value="hot">I like it a bit warm.</option>
+            <option value="cold">A little chill is good for me.</option>
+          </select>
+          <br>
+          <!-- End Question -->
+
+          <!-- Question 2 -->
+          <label for="city">Do you prefer the culture of a city or the adventure of the outdoors?</label>
+          <select class="input" id="city">
+            <option value="culture">The culture!</option>
+            <option value="adventure">The adventure!</option>
+          </select>
+          <br>
+          <!-- End Question -->
+
+          <!-- Question 3 -->
+          <label for="forest">Do prefer somewhere pretty verdant, or somewhere a little more sparse?</label>
+          <select class="input" id="forest">
+            <option value="trees">I like a little more vegetation.</option>
+            <option value="barren">I'm fine with somewhere a little stark.</option>
+          </select>
+          <br>
+          <!-- End Question -->
+
+          <!-- Question 4 -->
+          <label for="city">Would you prefer to stay in the US, or would you like to go abroad?</label>
+          <select class="input" id="city">
+            <option value="domestic">I'm a homebody, I'll stay here.</option>
+            <option value="abroad">I'd love to go abroad!</option>
+          </select>
+          <br>
+          <!-- End Question -->
+
+          <!-- Question 5 -->
+          <label for="language">Would you prefer somewhere that speaks English?</label>
+          <select class="input" id="language">
+            <option value="english">I'd prefer to speak English.</option>
+            <option value="foreign">I'd love to speak something else!</option>
+          </select>
+          <br>
+          <!-- End Question -->
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-lg btn-success">Submit</button>
+          <!-- End Button -->
+
+        </form>
+        <!-- End Form -->
+
+        <!-- Result -->
+        <div id="result">
+          <p>You should go to <span id="position"></span>!!!</p>
+          <div class="row">
+            <div class="col-md-6">
+
+              <!-- Pictures -->
+              <img id="joker" src="images/joke.jpg" alt="A picture of the Joker">
+              <img id="snow" src="images/presidentSnow.jpg" alt="A picture of the President Snow">
+              <img id="vader" src="images/darthVader.jpg" alt="A picture of the Darth Vader">
+              <img id="loki" src="images/loki.jpg" alt="A picture of Loki">
+              <!-- End Picutres -->
+
+            </div>
+          </div>
+        </div>
+        <!-- End Result -->
+      </div>
+    </body>
+  </html>
