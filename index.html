@@ -3,6 +3,7 @@
 
     <head>
       <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+      <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
       <link href="css/styles.css" rel="stylesheet" type="text/css" media="all">
       <script src="js/jquery-1.12.0.js"></script>
       <script src="js/scripts.js"></script>
@@ -11,7 +12,7 @@
 
     <body>
       <!-- Navbar -->
-            <div class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar navbar-fixed-top">
               <div class="container-fluid">
                 <div class="navbar-header">
                   <a class="navbar-brand text-muted" href=#>Choose Your Vacation!</a>
@@ -21,63 +22,66 @@
       <!-- End of Navbar -->
 
       <div class="container">
+        <div class="well">
+          <!-- Form -->
+          <form id="vacation">
 
-        <!-- Form -->
-        <form id="vacation">
+            <!-- Question 1 -->
+            <label for="temp">Do you prefer a warm vacation or do you like it a bit chilly??</label>
+            <select class="input" id="temp">
+              <option value="hot">I like it a bit warm.</option>
+              <option value="cold">A little chill is good for me.</option>
+            </select>
+            <br>
+            <!-- End Question -->
 
-          <!-- Question 1 -->
-          <label for="temp">Do you prefer a warm vacation or do you like it a bit chilly??</label>
-          <select class="input" id="temp">
-            <option value="hot">I like it a bit warm.</option>
-            <option value="cold">A little chill is good for me.</option>
-          </select>
-          <br>
-          <!-- End Question -->
+            <!-- Question 2 -->
+            <label for="city">Do you prefer the culture of a city or the adventure of the outdoors?</label>
+            <select class="input" id="city">
+              <option value="culture">The culture!</option>
+              <option value="adventure">The adventure!</option>
+            </select>
+            <br>
+            <!-- End Question -->
 
-          <!-- Question 2 -->
-          <label for="city">Do you prefer the culture of a city or the adventure of the outdoors?</label>
-          <select class="input" id="city">
-            <option value="culture">The culture!</option>
-            <option value="adventure">The adventure!</option>
-          </select>
-          <br>
-          <!-- End Question -->
+            <!-- Question 3 -->
+            <label for="forest">Do prefer somewhere pretty verdant, or somewhere a little more sparse?</label>
+            <select class="input" id="forest">
+              <option value="trees">I like a little more vegetation.</option>
+              <option value="barren">I'm fine with somewhere a little stark.</option>
+            </select>
+            <br>
+            <!-- End Question -->
 
-          <!-- Question 3 -->
-          <label for="forest">Do prefer somewhere pretty verdant, or somewhere a little more sparse?</label>
-          <select class="input" id="forest">
-            <option value="trees">I like a little more vegetation.</option>
-            <option value="barren">I'm fine with somewhere a little stark.</option>
-          </select>
-          <br>
-          <!-- End Question -->
+            <!-- Question 4 -->
+            <label for="country">Would you prefer to stay in the US, or would you like to go abroad?</label>
+            <select class="input" id="country">
+              <option value="domestic">I'm a homebody, I'll stay here.</option>
+              <option value="abroad">I'd love to go abroad!</option>
+            </select>
+            <br>
+            <!-- End Question -->
 
-          <!-- Question 4 -->
-          <label for="country">Would you prefer to stay in the US, or would you like to go abroad?</label>
-          <select class="input" id="country">
-            <option value="domestic">I'm a homebody, I'll stay here.</option>
-            <option value="abroad">I'd love to go abroad!</option>
-          </select>
-          <br>
-          <!-- End Question -->
+            <!-- Question 5 -->
+            <label for="language">Would you prefer somewhere that speaks English?</label>
+            <select class="input" id="language">
+              <option value="english">I'd prefer to speak English.</option>
+              <option value="foreign">I'd love to speak something else!</option>
+            </select>
+            <br>
+            <!-- End Question -->
 
-          <!-- Question 5 -->
-          <label for="language">Would you prefer somewhere that speaks English?</label>
-          <select class="input" id="language">
-            <option value="english">I'd prefer to speak English.</option>
-            <option value="foreign">I'd love to speak something else!</option>
-          </select>
-          <br>
-          <!-- End Question -->
+            <!-- Submit Button -->
+            <br>
+            <button type="submit" class="btn btn-md btn-success">Submit</button>
+            <!-- End Button -->
 
-          <!-- Submit Button -->
-          <button type="submit" class="btn btn-lg btn-success">Submit</button>
-          <!-- End Button -->
-
-        </form>
-        <!-- End Form -->
+          </form>
+          <!-- End Form -->
+        </div>
 
         <!-- Result -->
+        <br>
         <div id="result">
           <p><span id="position"></span></p>
           <div class="row">
