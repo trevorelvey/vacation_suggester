@@ -1,7 +1,11 @@
-#result {
-  display: none;
+body {
+  padding-top: 70px;
 }
 
 img {
   max-width: 100%;
+}
+
+#result {
+  display: none;
 }
