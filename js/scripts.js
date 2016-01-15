@@ -1,15 +1,19 @@
 $(document).ready(function() {
-  $("form#villains").submit(function(event) {
+  $("form#vacation").submit(function(event) {
     $("img").hide();
-    var humorVariable = $("select#humor").val();
-    var capeVariable = $("select#capes").val();
-    if (humorVariable === "anti-humor" && capeVariable === "anti-cape") {
+    var tempVariable = $("select#temp").val();
+    var cityVariable = $("select#city").val();
+    var forestVariable = $("select#forest").val();
+    var countryVariable = $("select#country").val();
+    var languageVariable = $("select#language").val();
+
+    if (tempVariable === "hot" && cityVariable === "culture" && forestVariable === "trees" && countryVariable === "domestic" && languageVariable === "english") {
       result = "President Snow";
       $("#snow").show();
 
-    } else if (humorVariable === "pro-humor" && capeVariable === "pro-cape") {
+    } else if (tempVariable === "hot") {
       result = "Loki";
-    } if (result === "Loki"){
+    } if (result === "Loki") {
       $("#loki").show();
 
     } else if (humorVariable === "pro-humor" && capeVariable === "anti-cape") {
