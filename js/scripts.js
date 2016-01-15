@@ -103,8 +103,68 @@ $(document).ready(function() {
       $("#snow").show();
 
 // Option 20
-    } else if (tempVariable === "cold" && cityVariable === "culture" && forestVariable === "forest" && countryVariable === "domestic" && languageVariable === "english") {
+    } else if (tempVariable === "cold" && cityVariable === "culture" && forestVariable === "trees" && countryVariable === "domestic" && languageVariable === "english") {
       result = "You should go to Minneapolis, Minnesota!!!";
+      $("#snow").show();
+
+// Option 21
+    } else if (tempVariable === "cold" && cityVariable === "adventure" && forestVariable === "trees" && countryVariable === "abroad" && languageVariable === "foreign") {
+      result = "You should go to Patagonia!!!";
+      $("#snow").show();
+
+// Option 22
+    } else if (tempVariable === "cold" && cityVariable === "adventure" && forestVariable === "trees" && countryVariable === "abroad" && languageVariable === "english") {
+      result = "You should go to British Columbia, Canada!!!";
+      $("#snow").show();
+
+// Option 23
+    } else if (tempVariable === "cold" && cityVariable === "adventure" && forestVariable === "trees" && countryVariable === "domestic" && languageVariable === "foreign") {
+      result = "Not a lot of options for that, but maybe Quebec is good enough?";
+      $("#snow").show();
+
+// Option 24
+    } else if (tempVariable === "cold" && cityVariable === "adventure" && forestVariable === "trees" && countryVariable === "domestic" && languageVariable === "english") {
+      result = "You should go to Glacier National Park, Montana!";
+      $("#snow").show();
+
+// Option 25
+    } else if (tempVariable === "cold" && cityVariable === "culture" && forestVariable === "barren" && countryVariable === "abroad" && languageVariable === "foreign") {
+      result = "You should go to Moscow, Russia!";
+      $("#snow").show();
+
+// Option 26
+    } else if (tempVariable === "cold" && cityVariable === "culture" && forestVariable === "barren" && countryVariable === "abroad" && languageVariable === "english") {
+      result = "Not too sure about this one, but maybe Edinburgh, Scotland?";
+      $("#snow").show();
+
+// Option 27
+    } else if (tempVariable === "cold" && cityVariable === "culture" && forestVariable === "barren" && countryVariable === "domestic" && languageVariable === "foreign") {
+      result = "I've got nothing for you here, may I suggest Netflix?";
+      $("#snow").show();
+
+// Option 28
+    } else if (tempVariable === "cold" && cityVariable === "culture" && forestVariable === "barren" && countryVariable === "domestic" && languageVariable === "english") {
+      result = "Not really anything for you here, American cities don't seem to occur where it's cold and desolate. May I suggest Anchorage, Alaska?";
+      $("#snow").show();
+
+// Option 29
+    } else if (tempVariable === "cold" && cityVariable === "adventure" && forestVariable === "barren" && countryVariable === "abroad" && languageVariable === "foreign") {
+      result = "You should go to Siberia!";
+      $("#snow").show();
+
+// Option 30
+    } else if (tempVariable === "cold" && cityVariable === "adventure" && forestVariable === "barren" && countryVariable === "abroad" && languageVariable === "english") {
+      result = "You should go to Antarctica!";
+      $("#snow").show();
+
+// Option 31
+    } else if (tempVariable === "cold" && cityVariable === "adventure" && forestVariable === "barren" && countryVariable === "domestic" && languageVariable === "foreign") {
+      result = "I've got nothing for you here, may I suggest Netflix?";
+      $("#snow").show();
+
+// Option 32
+    } else if (tempVariable === "cold" && cityVariable === "adventure" && forestVariable === "barren" && countryVariable === "domestic" && languageVariable === "english") {
+      result = "You should go to Northern Alaska!";
       $("#snow").show();
 
     }
