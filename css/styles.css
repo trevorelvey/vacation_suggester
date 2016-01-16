@@ -7,7 +7,7 @@ body {
   font-family: 'EB Garamond', serif;
   font-size: 16px;
   color: white;
-  padding: 70px;
+  padding-top: 70px;
 }
 
 .navbar {
@@ -16,6 +16,14 @@ body {
 
 .navbar .navbar-brand {
   color: white;
+  font-family: 'Megrim', cursive;
+}
+
+
+
+.input {
+  float: right;
+  width: 500px;
 }
 
 .well {
@@ -33,4 +41,20 @@ img {
 
 #select {
   float:right;
+}
+
+.footer{
+  bottom: -50px;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  right: 0;
+ }
+
+.glyphicon {
+ padding-right: 20px;
+ font-size: 3em;
+ float: right;
+ float: bottom;
+ display: inline-block;
 }
