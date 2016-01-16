@@ -1,29 +1,13 @@
+/* General Formatting */
 body {
   background-color: black;
   background: url('../images/background.jpg');
   background-size: 1440px 800px;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: 'EB Garamond', serif;
   font-size: 16px;
   color: white;
   padding-top: 70px;
-}
-
-.navbar {
-   background: rgba(10, 15, 20, 0.6);
-}
-
-.navbar .navbar-brand {
-  color: white;
-  font-family: 'Megrim', cursive;
-}
-
-
-
-.input {
-  float: right;
-  width: 500px;
 }
 
 .well {
@@ -35,16 +19,39 @@ img {
   max-width: 100%;
 }
 
-#result {
-  display: none;
+/* Navbar Formatting */
+.navbar {
+   background: rgba(10, 15, 20, 0.6);
+}
+
+.navbar .navbar-brand {
+  color: white;
+  font-family: 'Megrim', cursive;
+}
+
+/* Form Formatting */
+label {
+  font-weight: normal;
+}
+
+.input {
+  float: right;
+  width: 500px;
 }
 
 #select {
   float:right;
 }
 
+/* Hide Result */
+#result {
+  display: none;
+}
+
+
+/* Footer Glyphicon Formatting */
 .footer{
-  bottom: -50px;
+  bottom: 0px;
   height: 50px;
   left: 0;
   position: absolute;
